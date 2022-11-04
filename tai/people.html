@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="介紹台灣歷史" />
+  <title>台灣發展史</title>
+  <!--mark-->
+  <link rel="stylesheet" href="twicon.css" />
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--icon-->
+  <link rel="shortcut icon" href="taiwanIcon.png" />
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Year", "population"],
+        ["2000", 22276672],
+        ["2005", 22770383],
+        ["2010", 23162123],
+        ["2015", 23492074],
+        ["2020", 23561236],
+        ["2021", 23375314],
+      ]);
+
+      var options = {
+        title: "台灣人口成長率",
+        curveType: "function",
+        legend: { position: "bottom" },
+      };
+
+      var chart = new google.visualization.LineChart(
+        document.getElementById("curve_chart")
+      );
+
+      chart.draw(data, options);
+    }
+  </script>
+  <link rel="stylesheet" href="people.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="headertitle"><i class="twicon-roc-flag"></i>台灣發展史</h1>
+    <h4 class="headertext">過去70年台灣的經濟發展歷史</h4>
+  </header>
+  <!--導覽列-->
+  <nav>
+    <ul>
+      <li>
+        <a class="artive" href="index.html"><i class="twicon-main-island"></i> 首頁</a>
+      </li>
+      <li>
+        <a class="artive1" href="history.html"><i class="twicon-black-bear"></i> 歷史走向</a>
+      </li>
+      <li>
+        <a href="place.html"><i class="twicon-lovers-brg"></i> 地理位置</a>
+      </li>
+      <li>
+        <a class="artive2" href="#"><i class="twicon-red-man"></i> 人口成長</a>
+      </li>
+      <li>
+        <a href="encomic.html"><i class="twicon-president-office"></i> 經濟起飛</a>
+      </li>
+    </ul>
+  </nav>
+  <!--內容-->
+  <main>
+    <section class="title">
+      <p>
+        臺灣目前總人口約22,929,725人(2022年7月底統計)，可分為5大族群：漢族閩南人(河洛人)、漢族客家人、外省人、原住民族、新住民。
+        在臺灣活動已有約八千年之久的原住民族(未納入平埔族血統者)約佔總人口2.36%(554,585人)，其餘絕大多數為漢人。其中又分為「本省人」以及「外省人」。
+        本省人主要為閩南人(河洛人)(65.5%－70.5%)和客家人(17.5%－23.5%)。外省人是指1945~1949年跟隨中華民國政府來臺的新移民及其後代。由於混居及通婚，
+        目前除了在部分地區(如眷村)外，兩者已不易分辨。客家人主要分佈於北部的臺北市，新北市，桃園市，新竹縣，苗栗縣，中部的南投縣，臺中市，南部的高雄市，
+        屏東縣六堆及東部的花東縱谷等客家地區為主要分布地區。另外在北部的宜蘭，中部的彰化雲林，南部的嘉義、臺南市丘陵地有零星客家聚落分佈。閩南人則分佈在臺灣各縣市。
+        <br />
+        <br />
+        中華民國政府(主管機關為中華民國原住民族委員會)沿襲歷史上的稱法將臺灣原住民族粗略劃分為高山族和平埔族兩大類，而傳統所稱的「高山族」實則包含了至少16個部族，
+        其中傳統9族包含原統稱為高山族的泰雅族、阿美族、布農族、卑南族、排灣族、魯凱族、鄒族、賽夏族及蘭嶼上的達悟族(舊稱雅美族)，近年太魯閣族、賽德克族由泰雅族劃分出來、
+        撒奇萊雅族由阿美族劃分出來、拉阿魯哇族及卡那卡那富族由鄒族劃分出來。屬於平埔族的則有邵族與噶瑪蘭族也獲得承認。原民會在介紹臺灣原住民族與世界南島語系民族的關係時表明「臺灣原住民族屬於南島語系。
+        臺灣原住民族共有十九個部族，可略區分為高山族和平埔族。原住民族目前保有自己的語言、風俗習慣和部落結構，不過也正面臨急速現代化的問題。平埔族則大多已失去原有的語言和習俗。」
+        <br />
+        <br />
+        近年來因經濟自由化以及國際貿易的關係，讓東亞各地許多族群來臺工作，其中以東南亞人民為主，例如一些外籍勞工(如：菲律賓勞工、泰國勞工、印尼勞工、越南勞工)、幫傭看護(如：菲律賓幫傭、印尼幫傭、越南幫傭)等，
+        還有一些中國東南沿海地區的偷渡者。近年來，部分臺灣男子與東南亞或大陸女子通婚，她們在臺灣一般被稱呼為「外籍新娘」(外籍女性配偶)或大陸新娘、中國新娘(中國大陸女性配偶)以及其婚生子女的新住民族群。因此這些女性希望社會能正視她們為新移民女性。
+        現在無論官方或民間皆呼籲視之為第五大族群並以新住民稱之。
+        <br />
+        <br />
+      </p>
+      <div class="size">
+        <img class="picture" src="people.jpg" />
+        <div id="curve_chart" style="width: 700px; height: 500px"></div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

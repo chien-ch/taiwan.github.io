@@ -1,0 +1,96 @@
+/*框架設定*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header {
+  background-color: rgba(185, 174, 174, 0.9);
+  padding: 1rem;
+  width: 100%;
+}
+
+.headertitle {
+  font-size: 2.7rem;
+}
+
+.headertext {
+  padding-left: 1rem;
+}
+
+nav {
+  background-color: rgba(20, 19, 19, 0.838);
+}
+
+nav ul {
+  display: flex;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.artive1 {
+  font-size: 130%;
+}
+nav ul li a:hover {
+  color: rgba(240, 248, 255, 0.6);
+}
+main {
+  width: 100%;
+  display: flex;
+}
+
+section.title {
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.button-group button {
+  background-color: #174e18;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 10px;
+  margin: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #237824;
+}
+
+.button-group p {
+  display: none;
+  margin: -1rem 1rem;
+}
+.button1:hover + p.text1,
+.button2:hover + p.text2,
+.button3:hover + p.text3,
+.button4:hover + p.text4,
+.button5:hover + p.text5,
+.button6:hover + p.text6,
+.button7:hover + p.text7,
+.button8:hover + p.text8,
+.button9:hover + p.text9,
+.button10:hover + p.text10 {
+  display: block;
+}
